@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * This ProductsGridCollectionDelegate class handles UICollectionViewDelegate protocol methods
+ */
 class ProductsGridCollectionDelegate: NSObject {
     let viewModel: ProductsGridViewModel
     
@@ -16,6 +19,7 @@ class ProductsGridCollectionDelegate: NSObject {
     }
 }
 
+//MARK: - UICollectionViewDelegate
 extension ProductsGridCollectionDelegate: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
@@ -28,17 +32,9 @@ extension ProductsGridCollectionDelegate: UICollectionViewDelegate {
 }
 
 //MARK: - UIViewCollectionFlowLayoutDelegate
-
 extension ProductsGridCollectionDelegate: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let frame = UIScreen.main.bounds
-        
-        if (UIDevice.current.userInterfaceIdiom == .phone) {
-            return viewModel.cellSize(width:frame.width, height: 330.0)
-        }
-        
         return viewModel.cellSize(width: 240.0, height: 330.0)
     }
 }

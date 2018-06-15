@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Holds information about Product's price
 struct Price {
     let was: String
     let now: String

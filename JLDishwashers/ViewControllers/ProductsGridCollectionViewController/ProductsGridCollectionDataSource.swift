@@ -8,8 +8,12 @@
 
 import UIKit
 
+/**
+ * This ProductsGridCollectionDataSource class provides data to its provider
+ */
 class ProductsGridCollectionDataSource: NSObject {
     
+    //MARK: Properties
     let viewModel: ProductsGridViewModel
     
     init(viewModel: ProductsGridViewModel) {
@@ -17,6 +21,7 @@ class ProductsGridCollectionDataSource: NSObject {
     }
 }
 
+//MARK: Handling UICollectionViewDataSource callbacks
 extension ProductsGridCollectionDataSource: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

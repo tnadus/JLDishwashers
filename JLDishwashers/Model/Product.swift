@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Holds information about one Product
 struct Product {
     let productId: String
     let price: Price

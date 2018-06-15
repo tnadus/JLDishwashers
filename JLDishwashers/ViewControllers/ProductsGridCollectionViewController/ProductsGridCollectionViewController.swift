@@ -8,9 +8,15 @@
 
 import UIKit
 
-
+/**
+ *
+ * This CollectionViewController shows dishwasher products in a grid of cells
+ * Initialization of the ProductsGridCollectionViewController is done via Storyboard
+ *
+ */
 class ProductsGridCollectionViewController: UICollectionViewController {
     
+    //MARK: properties
     let viewModel = ProductsGridViewModel(productsAPI: JLProductsNetworkAPI())
     var spinner: UIActivityIndicatorView?
     
@@ -22,12 +28,14 @@ class ProductsGridCollectionViewController: UICollectionViewController {
         return ProductsGridCollectionDelegate(viewModel: viewModel)
     }()
     
+    //MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         bindViews()
     }
 
+    //MARK: Subviews methods
     func setupViews() {
         self.title = viewModel.title
         self.collectionView?.dataSource = dataSource

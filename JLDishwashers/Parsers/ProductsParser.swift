@@ -9,10 +9,12 @@
 import Foundation
 import SwiftyJSON
 
-
-
+/**
+ * This ProductsParser class parses data and returns in products array
+ */
 class ProductsParser {
     
+    //MARK: JSON Keys to avoid any typo error when accesing json elements
     private enum JSONKey: String {
         case products
     }
@@ -30,6 +32,10 @@ class ProductsParser {
         case currency
     }
     
+    /// Price builder method to create Price instance
+    ///
+    /// - Parameter priceJSON: requires price json data in SwiftyJSON.JSON type
+    /// - Returns: Price instance If Successful, otherwise nil
     private static func makePrice(_ priceJSON: SwiftyJSON.JSON) -> Price? {
         guard let was  = priceJSON[PriceKeys.was.rawValue].string,
             let now = priceJSON[PriceKeys.now.rawValue].string,
@@ -41,6 +47,10 @@ class ProductsParser {
         return Price(was: was, now: now, currency: currency)
     }
         
+    /// Product builder method to create Product instance
+    ///
+    /// - Parameter productJSON: requires product json data in SwiftyJSON.JSON type
+    /// - Returns: Product instance If Successful, otherwise nil
     private static func makeProduct(_ productJSON: SwiftyJSON.JSON) -> Product? {
     
         guard let productId = productJSON[ProductKeys.productId.rawValue].string,
@@ -58,6 +68,10 @@ class ProductsParser {
 
 extension ProductsParser {
     
+    /// Parse Data and return products array
+    ///
+    /// - Parameter data: should be in json format
+    /// - Returns: Array of Product
     static func parse(data: Data) -> [Product]? {
         
         let jsonData = JSON(data: data)
@@ -72,5 +86,4 @@ extension ProductsParser {
         }
         return products.count > 0 ? products : nil
     }
-    
 }

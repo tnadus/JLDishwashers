@@ -8,16 +8,21 @@
 
 import UIKit
 
+/**
+ *
+ * This ProductCell shows dishwasher product with an image and description
+ * Initialization of the ProductCell is done via Storyboard
+ *
+ */
 class ProductCell: UICollectionViewCell {
     
-    
+    //MARK: Properties
     var urlString = ""
     let defaultColor = UIColor.white
-    var shouldTintBackgroundWhenSelected = true // You can change default value
+    var shouldTintBackgroundWhenSelected = true
     var specialHighlightedArea: UIView?
     
     //MARK: Subviews
-    
     let coverImgView: UIImageView = {
         let iv = UIImageView(frame: .zero)
         iv.backgroundColor = .white
@@ -43,6 +48,7 @@ class ProductCell: UICollectionViewCell {
         return v
     }()
     
+    //MARK: View lifecycle
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -53,6 +59,7 @@ class ProductCell: UICollectionViewCell {
         setupViews()
     }
     
+    //MARK: Subviews setup
     func setupViews() {
         
         self.addSubview(coverImgView)
@@ -77,7 +84,6 @@ class ProductCell: UICollectionViewCell {
 }
 
 //MARK: - Cell highlight
-
 extension ProductCell {
     
     override var isHighlighted: Bool { // make lightgray background show immediately

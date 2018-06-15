@@ -8,16 +8,22 @@
 
 import UIKit
 
+/**
+ *
+ * This ProductsGridViewModel class is making data ready for presentation
+ */
 class ProductsGridViewModel {
     
+    //MARK: Properties
     let productsAPI: JLProductsAPI
+    var products: Dynamic<[Product]> = Dynamic(value:[])
     var title = "Loading..."
     let cache = NSCache<AnyObject, AnyObject>()
-    let dateFormatterInput = DateFormatter()
-    let dateFormatterOutput = DateFormatter()
+
     
-    var products: Dynamic<[Product]> = Dynamic(value:[])
-    
+    /// Initialize ProductsGridViewModel instance
+    ///
+    /// - Parameter productsAPI: Abstract Product Data provider
     init(productsAPI: JLProductsAPI) {
         self.productsAPI = productsAPI
         
@@ -31,11 +37,21 @@ class ProductsGridViewModel {
         }
     }
     
+    /// Calculate the required size for cell
+    ///
+    /// - Parameters:
+    ///   - width: cell width
+    ///   - height: cell height
+    /// - Returns: CGSize instance using width & height
     func cellSize(width: CGFloat, height: CGFloat) -> CGSize {
         let size = CGSize(width: width, height: height)
         return size
     }
     
+    /// Create title for cell
+    ///
+    /// - Parameter indexPath: cell indexPath
+    /// - Returns: NSAttributedString intance including product title & price
     func cellTitle(indexPath: IndexPath) -> NSAttributedString {
         if products.value.count > 0 {
             let attrsRegular = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.darkGray]
@@ -50,15 +66,12 @@ class ProductsGridViewModel {
         return NSAttributedString(string: "")
     }
     
-    func formattedDateString(_ dateString: String) -> String {
-        let dateObj = dateFormatterInput.date(from: dateString)
-        if let date = dateObj {
-            let formattedString = dateFormatterOutput.string(from:date)
-            return formattedString
-        }
-        return ""
-    }
     
+    /// Load product images asyncronously
+    ///
+    /// - Parameters:
+    ///   - urlString: url address of image
+    ///   - completion: Returns a valid image If request is successful
     func loadImage(urlString: String, completion: @escaping (UIImage?) -> Void) {
         
         if let img = cache.object(forKey: urlString as AnyObject) as? UIImage {
