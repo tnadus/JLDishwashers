@@ -1,5 +1,5 @@
 //
-//  ProductTests.swift
+//  PriceTests.swift
 //  JLDishwashersTests
 //
 //  Created by Murat Sudan on 15.06.2018.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import JLDishwashers
 
-class ProductTests: XCTestCase {
+class PriceTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,10 +22,10 @@ class ProductTests: XCTestCase {
     }
     
     func test_allPropertiesAreSetCorrectlyForDefaultInitializer() {
-        
-        let sut = Product(productId: "1000", price: Price(was: "", now: "", currency: ""), title: "Bosch Dishwasher 2019", imageURLPath: "//johnlewis.scene7.com/is/image/1000.jpg")
-        XCTAssertEqual(sut.productId, "1000")
-        XCTAssertEqual(sut.title, "Bosch Dishwasher 2019")
-        XCTAssertEqual(sut.imageURLPath, "//johnlewis.scene7.com/is/image/1000.jpg")
+        let sut = Price(was: "399.00", now: "349.00", currency: "GBP")
+        XCTAssertEqual(sut.was, "399.00")
+        XCTAssertEqual(sut.now, "349.00")
+        XCTAssertEqual(sut.currency, "GBP")
     }
+    
 }

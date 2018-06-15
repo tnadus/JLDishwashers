@@ -1,5 +1,5 @@
 //
-//  Product.swift
+//  Price.swift
 //  JLDishwashers
 //
 //  Created by Murat Sudan on 15.06.2018.
@@ -8,10 +8,8 @@
 
 import Foundation
 
-struct Product {
-    let productId: String
-    let price: Price
-    let title: String
-    let imageURLPath: String
+struct Price {
+    let was: String
+    let now: String
+    let currency: String
 }
-

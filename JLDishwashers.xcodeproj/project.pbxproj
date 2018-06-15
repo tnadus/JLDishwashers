@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E11D63C8EC37DC5ED15CC19 /* Pods_JLDishwashers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFE18C25C7A356C635497F1 /* Pods_JLDishwashers.framework */; };
 		6301960C20D3BB85003EE15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301960B20D3BB85003EE15C /* AppDelegate.swift */; };
-		6301960E20D3BB85003EE15C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301960D20D3BB85003EE15C /* ViewController.swift */; };
 		6301961120D3BB85003EE15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301960F20D3BB85003EE15C /* Main.storyboard */; };
 		6301961320D3BB85003EE15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6301961220D3BB85003EE15C /* Assets.xcassets */; };
 		6301961620D3BB85003EE15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301961420D3BB85003EE15C /* LaunchScreen.storyboard */; };
 		6301962C20D3BB85003EE15C /* JLDishwashersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301962B20D3BB85003EE15C /* JLDishwashersUITests.swift */; };
 		6301963A20D3BFAE003EE15C /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301963920D3BFAE003EE15C /* ProductTests.swift */; };
 		6301963D20D3C042003EE15C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301963C20D3C042003EE15C /* Product.swift */; };
+		6301964520D3C816003EE15C /* JLProductsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301964420D3C816003EE15C /* JLProductsAPI.swift */; };
+		6301964720D3C8DA003EE15C /* JLProductsNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301964620D3C8DA003EE15C /* JLProductsNetworkAPI.swift */; };
+		6301964A20D3C9F4003EE15C /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301964920D3C9F4003EE15C /* Dynamic.swift */; };
+		6301964C20D3CA18003EE15C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301964B20D3CA18003EE15C /* ImageLoader.swift */; };
+		6301966120D41E6C003EE15C /* ProductsGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301966020D41E6C003EE15C /* ProductsGridViewModel.swift */; };
+		6301966B20D41E89003EE15C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301966320D41E89003EE15C /* ProductCell.swift */; };
+		6301966C20D41E89003EE15C /* ProductsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301966520D41E89003EE15C /* ProductsParser.swift */; };
+		6301966D20D41E89003EE15C /* ProductsGridCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301966820D41E89003EE15C /* ProductsGridCollectionDelegate.swift */; };
+		6301966E20D41E89003EE15C /* ProductsGridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301966920D41E89003EE15C /* ProductsGridCollectionViewController.swift */; };
+		6301966F20D41E89003EE15C /* ProductsGridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301966A20D41E89003EE15C /* ProductsGridCollectionDataSource.swift */; };
+		6301967120D41EAE003EE15C /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301967020D41EAE003EE15C /* Price.swift */; };
+		6301967320D41F42003EE15C /* PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301967220D41F42003EE15C /* PriceTests.swift */; };
+		6301967520D42034003EE15C /* ProductsGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301967420D42034003EE15C /* ProductsGridViewModelTests.swift */; };
+		6301967820D420B8003EE15C /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6301967720D420B8003EE15C /* Products.json */; };
+		6301967A20D4283F003EE15C /* test-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6301967920D4283F003EE15C /* test-image.jpg */; };
+		6301967C20D42F70003EE15C /* ProductsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301967B20D42F70003EE15C /* ProductsParserTests.swift */; };
+		DF456152E7AF3B7C710F9366 /* Pods_JLDishwashersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E0CA4A79CB0402098E596B /* Pods_JLDishwashersTests.framework */; };
+		EA848CEB59F78258D5A453E0 /* Pods_JLDishwashersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066A208A2DE37FEC065E9AD3 /* Pods_JLDishwashersUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		066A208A2DE37FEC065E9AD3 /* Pods_JLDishwashersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLDishwashersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB63A7226B1B81FA395E1DE /* Pods-JLDishwashersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLDishwashersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLDishwashersTests/Pods-JLDishwashersTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CB6FE8BC61E25C207A464B6 /* Pods-JLDishwashers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLDishwashers.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLDishwashers/Pods-JLDishwashers.release.xcconfig"; sourceTree = "<group>"; };
 		6301960820D3BB85003EE15C /* JLDishwashers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLDishwashers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6301960B20D3BB85003EE15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6301960D20D3BB85003EE15C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6301961020D3BB85003EE15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6301961220D3BB85003EE15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6301961520D3BB85003EE15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +69,28 @@
 		6301962D20D3BB85003EE15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6301963920D3BFAE003EE15C /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		6301963C20D3C042003EE15C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6301964420D3C816003EE15C /* JLProductsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLProductsAPI.swift; sourceTree = "<group>"; };
+		6301964620D3C8DA003EE15C /* JLProductsNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLProductsNetworkAPI.swift; sourceTree = "<group>"; };
+		6301964920D3C9F4003EE15C /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		6301964B20D3CA18003EE15C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		6301966020D41E6C003EE15C /* ProductsGridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewModel.swift; sourceTree = "<group>"; };
+		6301966320D41E89003EE15C /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		6301966520D41E89003EE15C /* ProductsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsParser.swift; sourceTree = "<group>"; };
+		6301966820D41E89003EE15C /* ProductsGridCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridCollectionDelegate.swift; sourceTree = "<group>"; };
+		6301966920D41E89003EE15C /* ProductsGridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridCollectionViewController.swift; sourceTree = "<group>"; };
+		6301966A20D41E89003EE15C /* ProductsGridCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridCollectionDataSource.swift; sourceTree = "<group>"; };
+		6301967020D41EAE003EE15C /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		6301967220D41F42003EE15C /* PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTests.swift; sourceTree = "<group>"; };
+		6301967420D42034003EE15C /* ProductsGridViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewModelTests.swift; sourceTree = "<group>"; };
+		6301967720D420B8003EE15C /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		6301967920D4283F003EE15C /* test-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "test-image.jpg"; sourceTree = "<group>"; };
+		6301967B20D42F70003EE15C /* ProductsParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsParserTests.swift; sourceTree = "<group>"; };
+		85ABF43278FD5A2B30AEFE11 /* Pods-JLDishwashersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLDishwashersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLDishwashersTests/Pods-JLDishwashersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EDA318573DF81048F8DC80E /* Pods-JLDishwashers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLDishwashers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLDishwashers/Pods-JLDishwashers.debug.xcconfig"; sourceTree = "<group>"; };
+		A6643FDF41A097B1624ACF2D /* Pods-JLDishwashersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLDishwashersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLDishwashersUITests/Pods-JLDishwashersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8E53E8E1CA3C908A4B12FD6 /* Pods-JLDishwashersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLDishwashersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLDishwashersUITests/Pods-JLDishwashersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D0E0CA4A79CB0402098E596B /* Pods_JLDishwashersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLDishwashersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFE18C25C7A356C635497F1 /* Pods_JLDishwashers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLDishwashers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E11D63C8EC37DC5ED15CC19 /* Pods_JLDishwashers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF456152E7AF3B7C710F9366 /* Pods_JLDishwashersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA848CEB59F78258D5A453E0 /* Pods_JLDishwashersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +128,8 @@
 				6301961F20D3BB85003EE15C /* JLDishwashersTests */,
 				6301962A20D3BB85003EE15C /* JLDishwashersUITests */,
 				6301960920D3BB85003EE15C /* Products */,
+				64A872AC3A0F5B80F09C35B2 /* Pods */,
+				9E2DFE164EAA4401F38747DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +146,14 @@
 		6301960A20D3BB85003EE15C /* JLDishwashers */ = {
 			isa = PBXGroup;
 			children = (
+				6301964D20D3CC7D003EE15C /* AppDelegate */,
+				6301966620D41E89003EE15C /* ViewControllers */,
+				6301964020D3C63E003EE15C /* ViewModels */,
+				6301966220D41E89003EE15C /* Views */,
 				6301963B20D3C032003EE15C /* Model */,
-				6301960B20D3BB85003EE15C /* AppDelegate.swift */,
-				6301960D20D3BB85003EE15C /* ViewController.swift */,
+				6301966420D41E89003EE15C /* Parsers */,
+				6301964320D3C7A4003EE15C /* API */,
+				6301964820D3C9D5003EE15C /* Helpers */,
 				6301960F20D3BB85003EE15C /* Main.storyboard */,
 				6301961220D3BB85003EE15C /* Assets.xcassets */,
 				6301961420D3BB85003EE15C /* LaunchScreen.storyboard */,
@@ -113,8 +165,12 @@
 		6301961F20D3BB85003EE15C /* JLDishwashersTests */ = {
 			isa = PBXGroup;
 			children = (
-				6301962220D3BB85003EE15C /* Info.plist */,
+				6301967220D41F42003EE15C /* PriceTests.swift */,
 				6301963920D3BFAE003EE15C /* ProductTests.swift */,
+				6301967420D42034003EE15C /* ProductsGridViewModelTests.swift */,
+				6301967B20D42F70003EE15C /* ProductsParserTests.swift */,
+				6301962220D3BB85003EE15C /* Info.plist */,
+				6301967620D4203F003EE15C /* Resource */,
 			);
 			path = JLDishwashersTests;
 			sourceTree = "<group>";
@@ -131,9 +187,110 @@
 		6301963B20D3C032003EE15C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6301967020D41EAE003EE15C /* Price.swift */,
 				6301963C20D3C042003EE15C /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6301964020D3C63E003EE15C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6301966020D41E6C003EE15C /* ProductsGridViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6301964320D3C7A4003EE15C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6301964420D3C816003EE15C /* JLProductsAPI.swift */,
+				6301964620D3C8DA003EE15C /* JLProductsNetworkAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6301964820D3C9D5003EE15C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6301964920D3C9F4003EE15C /* Dynamic.swift */,
+				6301964B20D3CA18003EE15C /* ImageLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6301964D20D3CC7D003EE15C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6301960B20D3BB85003EE15C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6301966220D41E89003EE15C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6301966320D41E89003EE15C /* ProductCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6301966420D41E89003EE15C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				6301966520D41E89003EE15C /* ProductsParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		6301966620D41E89003EE15C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6301966720D41E89003EE15C /* ProductsGridCollectionViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6301966720D41E89003EE15C /* ProductsGridCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6301966820D41E89003EE15C /* ProductsGridCollectionDelegate.swift */,
+				6301966920D41E89003EE15C /* ProductsGridCollectionViewController.swift */,
+				6301966A20D41E89003EE15C /* ProductsGridCollectionDataSource.swift */,
+			);
+			path = ProductsGridCollectionViewController;
+			sourceTree = "<group>";
+		};
+		6301967620D4203F003EE15C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6301967920D4283F003EE15C /* test-image.jpg */,
+				6301967720D420B8003EE15C /* Products.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		64A872AC3A0F5B80F09C35B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EDA318573DF81048F8DC80E /* Pods-JLDishwashers.debug.xcconfig */,
+				5CB6FE8BC61E25C207A464B6 /* Pods-JLDishwashers.release.xcconfig */,
+				85ABF43278FD5A2B30AEFE11 /* Pods-JLDishwashersTests.debug.xcconfig */,
+				4BB63A7226B1B81FA395E1DE /* Pods-JLDishwashersTests.release.xcconfig */,
+				A6643FDF41A097B1624ACF2D /* Pods-JLDishwashersUITests.debug.xcconfig */,
+				C8E53E8E1CA3C908A4B12FD6 /* Pods-JLDishwashersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E2DFE164EAA4401F38747DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE18C25C7A356C635497F1 /* Pods_JLDishwashers.framework */,
+				D0E0CA4A79CB0402098E596B /* Pods_JLDishwashersTests.framework */,
+				066A208A2DE37FEC065E9AD3 /* Pods_JLDishwashersUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6301963020D3BB85003EE15C /* Build configuration list for PBXNativeTarget "JLDishwashers" */;
 			buildPhases = (
+				41188406922AE2A8FB435F02 /* [CP] Check Pods Manifest.lock */,
 				6301960420D3BB85003EE15C /* Sources */,
 				6301960520D3BB85003EE15C /* Frameworks */,
 				6301960620D3BB85003EE15C /* Resources */,
+				0C0371F797287DF71806AC38 /* [CP] Embed Pods Frameworks */,
+				26AB6E377DF99F39C7668B2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6301963320D3BB85003EE15C /* Build configuration list for PBXNativeTarget "JLDishwashersTests" */;
 			buildPhases = (
+				94CACA1A1241F57B27D17F9B /* [CP] Check Pods Manifest.lock */,
 				6301961820D3BB85003EE15C /* Sources */,
 				6301961920D3BB85003EE15C /* Frameworks */,
 				6301961A20D3BB85003EE15C /* Resources */,
+				60FAA58196B698D7DE896351 /* [CP] Embed Pods Frameworks */,
+				0A35C66A70CF8C7B4CC35B39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6301963620D3BB85003EE15C /* Build configuration list for PBXNativeTarget "JLDishwashersUITests" */;
 			buildPhases = (
+				96BCDDD815504C69032E6EEB /* [CP] Check Pods Manifest.lock */,
 				6301962320D3BB85003EE15C /* Sources */,
 				6301962420D3BB85003EE15C /* Frameworks */,
 				6301962520D3BB85003EE15C /* Resources */,
+				69749724126E49E665F7925F /* [CP] Embed Pods Frameworks */,
+				7D33FAF1E0951470F9083DE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +420,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6301967820D420B8003EE15C /* Products.json in Resources */,
+				6301967A20D4283F003EE15C /* test-image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +434,174 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A35C66A70CF8C7B4CC35B39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashersTests/Pods-JLDishwashersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C0371F797287DF71806AC38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashers/Pods-JLDishwashers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashers/Pods-JLDishwashers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26AB6E377DF99F39C7668B2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashers/Pods-JLDishwashers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41188406922AE2A8FB435F02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLDishwashers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60FAA58196B698D7DE896351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashersTests/Pods-JLDishwashersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69749724126E49E665F7925F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashersUITests/Pods-JLDishwashersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D33FAF1E0951470F9083DE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLDishwashersUITests/Pods-JLDishwashersUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94CACA1A1241F57B27D17F9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLDishwashersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96BCDDD815504C69032E6EEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLDishwashersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6301960420D3BB85003EE15C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6301960E20D3BB85003EE15C /* ViewController.swift in Sources */,
+				6301966D20D41E89003EE15C /* ProductsGridCollectionDelegate.swift in Sources */,
+				6301964720D3C8DA003EE15C /* JLProductsNetworkAPI.swift in Sources */,
+				6301966E20D41E89003EE15C /* ProductsGridCollectionViewController.swift in Sources */,
+				6301964A20D3C9F4003EE15C /* Dynamic.swift in Sources */,
+				6301964520D3C816003EE15C /* JLProductsAPI.swift in Sources */,
+				6301966120D41E6C003EE15C /* ProductsGridViewModel.swift in Sources */,
+				6301966F20D41E89003EE15C /* ProductsGridCollectionDataSource.swift in Sources */,
 				6301960C20D3BB85003EE15C /* AppDelegate.swift in Sources */,
+				6301967120D41EAE003EE15C /* Price.swift in Sources */,
+				6301966B20D41E89003EE15C /* ProductCell.swift in Sources */,
+				6301964C20D3CA18003EE15C /* ImageLoader.swift in Sources */,
 				6301963D20D3C042003EE15C /* Product.swift in Sources */,
+				6301966C20D41E89003EE15C /* ProductsParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +609,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6301967C20D42F70003EE15C /* ProductsParserTests.swift in Sources */,
 				6301963A20D3BFAE003EE15C /* ProductTests.swift in Sources */,
+				6301967320D41F42003EE15C /* PriceTests.swift in Sources */,
+				6301967520D42034003EE15C /* ProductsGridViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +768,7 @@
 		};
 		6301963120D3BB85003EE15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDA318573DF81048F8DC80E /* Pods-JLDishwashers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +784,7 @@
 		};
 		6301963220D3BB85003EE15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB6FE8BC61E25C207A464B6 /* Pods-JLDishwashers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +800,7 @@
 		};
 		6301963420D3BB85003EE15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85ABF43278FD5A2B30AEFE11 /* Pods-JLDishwashersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +820,7 @@
 		};
 		6301963520D3BB85003EE15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB63A7226B1B81FA395E1DE /* Pods-JLDishwashersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +839,7 @@
 		};
 		6301963720D3BB85003EE15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6643FDF41A097B1624ACF2D /* Pods-JLDishwashersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +856,7 @@
 		};
 		6301963820D3BB85003EE15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E53E8E1CA3C908A4B12FD6 /* Pods-JLDishwashersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
