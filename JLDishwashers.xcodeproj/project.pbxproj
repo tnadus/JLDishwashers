@@ -12,8 +12,9 @@
 		6301961120D3BB85003EE15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301960F20D3BB85003EE15C /* Main.storyboard */; };
 		6301961320D3BB85003EE15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6301961220D3BB85003EE15C /* Assets.xcassets */; };
 		6301961620D3BB85003EE15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301961420D3BB85003EE15C /* LaunchScreen.storyboard */; };
-		6301962120D3BB85003EE15C /* JLDishwashersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301962020D3BB85003EE15C /* JLDishwashersTests.swift */; };
 		6301962C20D3BB85003EE15C /* JLDishwashersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301962B20D3BB85003EE15C /* JLDishwashersUITests.swift */; };
+		6301963A20D3BFAE003EE15C /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301963920D3BFAE003EE15C /* ProductTests.swift */; };
+		6301963D20D3C042003EE15C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301963C20D3C042003EE15C /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,12 @@
 		6301961520D3BB85003EE15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6301961720D3BB85003EE15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6301961C20D3BB85003EE15C /* JLDishwashersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLDishwashersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6301962020D3BB85003EE15C /* JLDishwashersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLDishwashersTests.swift; sourceTree = "<group>"; };
 		6301962220D3BB85003EE15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6301962720D3BB85003EE15C /* JLDishwashersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLDishwashersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6301962B20D3BB85003EE15C /* JLDishwashersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLDishwashersUITests.swift; sourceTree = "<group>"; };
 		6301962D20D3BB85003EE15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6301963920D3BFAE003EE15C /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		6301963C20D3C042003EE15C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		6301960A20D3BB85003EE15C /* JLDishwashers */ = {
 			isa = PBXGroup;
 			children = (
+				6301963B20D3C032003EE15C /* Model */,
 				6301960B20D3BB85003EE15C /* AppDelegate.swift */,
 				6301960D20D3BB85003EE15C /* ViewController.swift */,
 				6301960F20D3BB85003EE15C /* Main.storyboard */,
@@ -110,8 +113,8 @@
 		6301961F20D3BB85003EE15C /* JLDishwashersTests */ = {
 			isa = PBXGroup;
 			children = (
-				6301962020D3BB85003EE15C /* JLDishwashersTests.swift */,
 				6301962220D3BB85003EE15C /* Info.plist */,
+				6301963920D3BFAE003EE15C /* ProductTests.swift */,
 			);
 			path = JLDishwashersTests;
 			sourceTree = "<group>";
@@ -123,6 +126,14 @@
 				6301962D20D3BB85003EE15C /* Info.plist */,
 			);
 			path = JLDishwashersUITests;
+			sourceTree = "<group>";
+		};
+		6301963B20D3C032003EE15C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6301963C20D3C042003EE15C /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 					};
 					6301961B20D3BB85003EE15C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6301960720D3BB85003EE15C;
 					};
@@ -261,6 +273,7 @@
 			files = (
 				6301960E20D3BB85003EE15C /* ViewController.swift in Sources */,
 				6301960C20D3BB85003EE15C /* AppDelegate.swift in Sources */,
+				6301963D20D3C042003EE15C /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6301962120D3BB85003EE15C /* JLDishwashersTests.swift in Sources */,
+				6301963A20D3BFAE003EE15C /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,12 +470,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2G876RW9RP;
 				INFOPLIST_FILE = JLDishwashersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elmadigital.JLDishwashersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLDishwashers.app/JLDishwashers";
@@ -474,6 +489,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2G876RW9RP;
 				INFOPLIST_FILE = JLDishwashersTests/Info.plist;
